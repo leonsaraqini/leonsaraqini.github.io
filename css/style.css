@@ -1,230 +1,72 @@
-/*part 1.0*/
-body{
-    margin: 0;
-    padding: 0;
-    background-color: rgb(19, 19, 19);
-}
 
-h1{
-    font-size: 98px;
-    text-shadow: 2px 2px 8px rgb(19, 19, 19);
-    margin: 10px;
-    color: #D3BC8D;
-    font-family: 'Alfa Slab One', cursive;
-  }
-
-.top-half{
-    background-color:rgb(19, 19, 19);
-  }
- 
-.top-half img{
-    width: 1050px;
-    height: auto;
-    top: 0;
-    left: 30%;
-    right: 30%;
-    margin: auto;
-    display: block;
-    border-bottom: 2px #D3BC8D solid;
-    opacity: 0.5;
-}
-           
-.navbar {
-  position: absolute;
-  top: 8px;
-  left: 25%;
-  right: 25%;
-  z-index: 1;
-}
-
-.title{
+*{
+  margin: auto;
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   color: white;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-    padding: 0;
-    text-shadow: 2px 2px 8px rgb(19, 19, 19);
-    z-index: 1;
+  background-color: #181818;
 }
 
-.title h3{
-  font-size: 30px;
-  margin: 0;
-  text-shadow: 2px 2px 3px rgb(19, 19, 19);
-  font-family: 'Ubuntu', sans-serif;
+#nameSurname{
+  text-align: center;
+  font-size: 50px;
+  margin: 20px 0px;
+  opacity: 0;
+  text-decoration: underline;
+  text-decoration-color: #2d7ad6;
+  animation: fadeIn 2s ease-in forwards;
+}
+
+#aboutMe{
+  padding: 21px;
+}
+
+#content{
+  animation: fadeIn 4s ease-in forwards;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  gap: 30px;
+}
+
+#icons{
+  display: flex;  
+  justify-content: space-between; 
+  gap: 20px;
 }
 
 h3{
-  font-size: 30px;
-  margin: 0;
-  color: white;
-  font-family: 'Ubuntu', sans-serif;
-  text-align: center;
-  margin:42px 0 42px 0;
-}
-      
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  
-  text-align: center;
-  
+  text-decoration: underline;
+  text-decoration-color: #2d7ad6;
 }
 
-li {
-  display: inline-block;
-  margin:0 10px 0 10px;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+a{
   text-decoration: none;
-  transition-duration: 0.6s;
-  width: 100px;
-  font-family: 'Ubuntu', sans-serif;
 }
 
-li a:hover {
-  color: #D3BC8D;
-  border-bottom:2px #D3BC8D solid ;
-}
-/**/
-
-/*part 2.0*/
-p{
-    font-family: 'Ubuntu', sans-serif;
-    color: white;
+div{
+  max-width: 715px;
 }
 
-p a{
-    color: white;
-    text-decoration: none;
-  }
-
-p a:hover{
-    color: #D3BC8D;
+#icons > a{
+  font-size: 30px;
 }
 
-.content-index h3{
-    color: #D3BC8D;
+i:hover, a:hover{
+  color: #2d7ad6;
 }
 
-.content-index{
-    width: 600px;
-    margin:auto; 
-    margin-bottom: 91px; 
-}
-/**/
-
-/*part 2.1*/
-.content-project{
-    width: 950px;
-    margin:auto; 
-    margin-bottom: 50px;
-  }
-  
-  .content-project h3{
-    color: #D3BC8D;
-  }
-  .content{
-    width: 600px;
-    margin:auto; 
-    margin-bottom: 91px; 
-  }
-  
-  .content h3{
-    color: #D3BC8D;
-  }
-  
-  .gallery{
-    border: 1px #D3BC8D solid;
-    height: 330px;
-    margin-bottom: 50px; 
-    margin-top: 50px;
-    position: relative;
-  }
-  
-  .gallery img{
-    width: 450px;
-    height: 330px;
-    position: absolute;
-    border-right: 1px #D3BC8D solid;
-    opacity: 0.8;
-  }
-  
-  .text {
-    position: absolute;
-    left: 50%;
-    margin-top: 50px;
-  }
-  
-/**/
-
-/*part 2.2*/
-.content-hobbies{
-    width: 800px;
-    margin:auto; 
-    margin-bottom: 50px;
-    margin-top: 50px;
-  }
-  
-iframe{
-    margin: auto;
-  }
-  
-.content-hobbies img{
-    border: 1px #D3BC8D dotted;
-    opacity: 0.9px;
-    width: 800px;
-  }
-  
-.content-hobbies h3{
-    color: #D3BC8D;
+hr{
+  border-color: #2d7ad6;
 }
 
-/**/
-
-/*part 3.0*/
-
-footer{
-    height: 65px;
-    background-color: #D3BC8D;
-    text-align: center;
-    text-shadow: 0px 0px 0px rgb(19, 19, 19);
-    padding: 0 210px 0 200px;
-    
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  footer ul{
-    float: left;
+  to {
+    opacity: 1;
   }
-  
-  footer li a{
-    padding: 14px 0px;
-    color: rgb(19, 19, 19);
-  }
-  
-  footer li{
-    padding: 0;
-    margin: 0;
-    font-size: 31px;
-  }
-  
-  footer li a:hover {
-    color: white;
-  
-  }
-  
-  footer p{
-    float: right;
-    padding-top: 6px;
-    color: rgb(19, 19, 19);
-  }
-
-/**/
+}
