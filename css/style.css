@@ -37,6 +37,10 @@
   gap: 20px;
 }
 
+.projectDescription{
+  padding-right: 10px;
+}
+
 h3{
   text-decoration: underline;
   text-decoration-color: #2d7ad6;
