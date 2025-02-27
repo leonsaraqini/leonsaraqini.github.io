@@ -23,6 +23,10 @@
   padding: 21px;
 }
 
+#projects{
+  animation: fadeIn 4s ease-in forwards;
+}
+
 #content{
   animation: fadeIn 5s ease-in forwards;
   display: flex; 
