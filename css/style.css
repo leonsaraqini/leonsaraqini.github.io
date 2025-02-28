@@ -151,7 +151,7 @@ hr{
   #additionalInfo{
     flex-direction: column;
     align-items: flex-start;
-    
+    margin: 0px 20px;
   }
 
   .additionalInfoSections{
@@ -160,11 +160,15 @@ hr{
     border-left: 0;
     border-bottom: 1px solid #2d7ad6;
     box-sizing: border-box;
+   
   }
 
   .spinner {
     width: 40px;
     height: 40px;
     border: 4px solid white;
+    border-top-color: #2d7ad6;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
   }
 }
