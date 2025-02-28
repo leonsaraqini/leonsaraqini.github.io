@@ -7,6 +7,7 @@
   font-style: normal;
   color: white;
   background-color: #181818;
+  max-width: 715px;
 }
 
 #nameSurname{
@@ -21,6 +22,12 @@
 
 #aboutMe{
   padding: 21px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  border-bottom: 1px solid #2d7ad6;
+  border-radius: 40%;
 }
 
 #projects{
@@ -38,7 +45,10 @@
 #icons{
   display: flex;  
   justify-content: space-between; 
-  gap: 20px;
+  width: 100%;
+  height: 75px;
+  border-top: 1px solid #2d7ad6;
+  border-radius: 40%;
 }
 
 .projectDescription{
@@ -54,9 +64,6 @@ a{
   text-decoration: none;
 }
 
-div{
-  max-width: 715px;
-}
 
 #icons > a{
   font-size: 30px;
@@ -68,7 +75,68 @@ i:hover, a:hover{
 
 hr{
   border-color: #2d7ad6;
+  border-radius: 50%;
 }
+
+#button {
+  border: 1px solid #2d7ad6;
+  color: white;
+  padding: 10px 21px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#button:hover{
+  background-color: #2d7ad6;
+  color: #181818;
+}
+
+
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid white;
+  border-top-color: #2d7ad6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+#wholeWebPage {
+  display: none;
+}
+
+#additionalInfo{
+  display: flex; 
+  align-items: stretch;
+  gap: 10px;
+
+}
+
+.additionalInfoSections{
+  flex: 1;
+  height: 300px;
+  padding-left: 10px;
+  border-left: 1px solid #2d7ad6;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 
 @keyframes fadeIn {
   from {
@@ -76,5 +144,27 @@ hr{
   }
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width: 715px) {
+  #additionalInfo{
+    flex-direction: column;
+    align-items: flex-start;
+    
+  }
+
+  .additionalInfoSections{
+    padding-left: 10px;
+    width: 100%;
+    border-left: 0;
+    border-bottom: 1px solid #2d7ad6;
+    box-sizing: border-box;
+  }
+
+  .spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid white;
   }
 }
