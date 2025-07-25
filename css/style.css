@@ -3,11 +3,15 @@
   margin: auto;
   font-family: "Open Sans", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 200;
   font-style: normal;
   color: white;
-  background-color: #181818;
+  background-image: url('../images/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
   max-width: 715px;
+  background-color: #1d3758;
 }
 
 #nameSurname{
@@ -16,8 +20,10 @@
   margin: 20px 0px;
   opacity: 0;
   text-decoration: underline;
-  text-decoration-color: #2d7ad6;
+  text-decoration-color: #1d3758;
   animation: fadeIn 2s ease-in forwards;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-style: normal;
 }
 
 #aboutMe{
@@ -26,16 +32,15 @@
   align-items: center;
   flex-direction: column;
   gap: 30px;
-  border-bottom: 1px solid #2d7ad6;
-  border-radius: 40%;
+  border-bottom: 3px dotted #1d3758;
 }
 
 #projects{
-  animation: fadeIn 4s ease-in forwards;
+  animation: fadeIn 1s ease-in forwards;
 }
 
 #content{
-  animation: fadeIn 5s ease-in forwards;
+  animation: fadeIn 2s ease-in forwards;
   display: flex; 
   flex-direction: column; 
   justify-content: center; 
@@ -47,8 +52,10 @@
   justify-content: space-between; 
   width: 100%;
   height: 75px;
-  border-top: 1px solid #2d7ad6;
-  border-radius: 40%;
+  border: 2px solid #1d3758;
+  border-radius: 10px;
+  position: sticky;
+  bottom: 21px;
 }
 
 .projectDescription{
@@ -57,7 +64,8 @@
 
 h3{
   text-decoration: underline;
-  text-decoration-color: #2d7ad6;
+  text-decoration-color: #1d3758;
+  font-weight: 500;
 }
 
 a{
@@ -70,28 +78,30 @@ a{
 }
 
 i:hover, a:hover{
-  color: #2d7ad6;
+  color: #1d3758;
 }
 
 hr{
-  border-color: #2d7ad6;
+  border-color: #1d3758;
   border-radius: 50%;
 }
 
 #button {
-  border: 1px solid #2d7ad6;
-  color: white;
+  border: 2px solid #1d3758;
   padding: 10px 21px;
+  border-radius: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  font-weight: 500;
   cursor: pointer;
 }
 
 #button:hover{
-  background-color: #2d7ad6;
-  color: #181818;
+  background-image: none;
+  background-color: #1d3758;
+  color: white;
 }
 
 
@@ -103,15 +113,19 @@ hr{
   align-items: center;
   justify-content: center;
   z-index: 1000;
+  background: none;
+  
 }
 
 .spinner {
   width: 50px;
   height: 50px;
   border: 5px solid white;
-  border-top-color: #2d7ad6;
+  border-top-color: #1d3758;
   border-radius: 50%;
   animation: spin 1s linear infinite;
+  background: none;
+  
 }
 
 #wholeWebPage {
@@ -127,9 +141,9 @@ hr{
 
 .additionalInfoSections{
   flex: 1;
-  height: 300px;
+  height: 360px;
   padding-left: 10px;
-  border-left: 1px solid #2d7ad6;
+  border-left: 3px dotted #1d3758;
 }
 
 @keyframes spin {
@@ -158,7 +172,7 @@ hr{
     padding-left: 10px;
     width: 100%;
     border-left: 0;
-    border-bottom: 1px solid #2d7ad6;
+    border-bottom: 3px dotted #1d3758;
     box-sizing: border-box;
    
   }
@@ -167,8 +181,17 @@ hr{
     width: 40px;
     height: 40px;
     border: 4px solid white;
-    border-top-color: #2d7ad6;
+    border-top-color: #1d3758;
     border-radius: 50%;
     animation: spin 1s linear infinite;
   }
+
+  #nameSurname{
+    font-size: 30px;
+  }
+
+  #icons{
+    width: 80%;
+  }
+
 }
