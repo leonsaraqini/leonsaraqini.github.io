@@ -7,11 +7,12 @@
   font-style: normal;
   color: white;
   background-image: url('../images/background.jpg');
-  background-repeat: no-repeat;
   background-attachment: fixed;  
   background-size: cover;
+  background-repeat: no-repeat;
   max-width: 715px;
   background-color: #1d3758;
+  
 }
 
 #nameSurname{
@@ -19,11 +20,11 @@
   font-size: 50px;
   margin: 20px 0px;
   opacity: 0;
-  text-decoration: underline;
   text-decoration-color: #1d3758;
   animation: fadeIn 2s ease-in forwards;
   font-family: "Special Gothic Expanded One", sans-serif;
   font-style: normal;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 #aboutMe{
@@ -56,6 +57,7 @@
   border-radius: 10px;
   position: sticky;
   bottom: 21px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .projectDescription{
@@ -66,6 +68,7 @@ h3{
   text-decoration: underline;
   text-decoration-color: #1d3758;
   font-weight: 500;
+  text-shadow: 1px 1px 3px #000000;
 }
 
 a{
@@ -96,6 +99,7 @@ hr{
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #button:hover{
@@ -114,7 +118,6 @@ hr{
   justify-content: center;
   z-index: 1000;
   background: none;
-  
 }
 
 .spinner {
